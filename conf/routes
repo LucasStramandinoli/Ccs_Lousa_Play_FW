@@ -1,0 +1,16 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /                           controllers.MainController.index()
+GET		/test						controllers.MainController.test()
+
+GET     /message                    controllers.MessageController.getMessage()
+GET     /assets/javascripts/routes  controllers.MessageController.javascriptRoutes()
+
+GET     /name                    	controllers.NameController.getName()
+GET     /assets/javascripts/routes2  controllers.NameController.javascriptRoutes2()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /webjars/*file              controllers.WebJarAssets.at(file)

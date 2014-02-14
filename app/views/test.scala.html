@@ -1,0 +1,17 @@
+@(name: String)
+
+@main("Welcome to Play Framework") {
+
+    <script type='text/javascript' src='@routes.Assets.at("javascripts/test.min.js")'></script>
+    
+    <div class="well">
+        <h1>@name</h1>
+    </div>
+    <form>
+    	Name: <input type="text" name="txtName"><br>
+    	
+    </form>
+    <button id="btnAddName">Name</button>
+    <button id="getMessageButton">Message</button>
+
+}
